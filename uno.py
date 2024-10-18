@@ -14,6 +14,7 @@ def start_game(deck):
     p1 = deck[:7]
     p2 = deck[7:14]
     deck = deck[14:]
+    # p1 = [deck.pop(0) for _ in range(7)] works too
     face_up = deck.pop(0)
     main_loop(p1, p2, face_up, deck)
 
